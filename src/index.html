@@ -3,9 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cool Math Games</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/polina.css" />
+    <link rel="stylesheet" href="./css/sviat.css" />
+    <link rel="stylesheet" href="./css/illia.css" />
   </head>
+
   <body>
-    <h1>командний проєкт</h1>
+    <header></header>
+    <main>
+      <section class="leap__year__game">
+        <div class="container">
+          <h2 class="leap__title">Перевір в який рік ти народився</h2>
+          <div class="leap__div">
+            <form action="" id="leapForm">
+              <input
+                type="text"
+                id="leapInput"
+                placeholder="Введіть свій рік народження"
+              />
+              <button class="leap__button" type="submit">btn</button>
+            </form>
+            <p id="leapResult"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- guesswork -->
+
+      <section class="stonePaperScissor">
+        <ul class="stonePaperScissor__list">
+          <li>
+            <button
+              type="button"
+              class="stonePaperScissor__button"
+              data-action="stone"
+            >
+              stone
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              class="stonePaperScissor__button"
+              data-action="paper"
+            >
+              paper
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              class="stonePaperScissor__button"
+              data-action="scissor"
+            >
+              scissor
+            </button>
+          </li>
+        </ul>
+        <p class="stonePaperScissor__user">0</p>
+        <p class="stonePaperScissor__computer">0</p>
+      </section>
+
+      <section class="calculator">
+        <input class="calculator__Input-First" type="text" />
+        <ul class="calculator__list">
+          <li class="calculator__item">
+            <button
+              type="button"
+              class="calculator__Operator"
+              data-action="plus"
+            >
+              +
+            </button>
+          </li>
+          <li class="calculator__item">
+            <button
+              type="button"
+              class="calculator__Operator"
+              data-action="minus"
+            >
+              -
+            </button>
+          </li>
+          <li class="calculator__item">
+            <button
+              type="button"
+              class="calculator__Operator"
+              data-action="multiple"
+            >
+              *
+            </button>
+          </li>
+          <li class="calculator__item">
+            <button
+              type="button"
+              class="calculator__Operator"
+              data-action="divide"
+            >
+              /
+            </button>
+          </li>
+        </ul>
+        <input class="calculator__Input-Second" type="text" />
+        <button type="button" class="calculator__Egal">=</button>
+        <p class="calculator__Result"></p>
+      </section>
+
+      <!-- clockwork -->
+
+      <!-- google dinosaur -->
+
+      <!-- football -->
+
+      <section class="three__numbers__game">
+        <div class="three__numbers__container">
+          <h2 class="three__numbers__title">Введіть 3 числа</h2>
+          <div class="three__numbers__div">
+            <form action="" id="threeForm">
+              <input type="text" id="num1" placeholder="Введіть число" />
+              <input type="text" id="num2" placeholder="Введіть число" />
+              <input type="text" id="num3" placeholder="Введіть число" />
+            </form>
+            <p id="threeResult"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="team__slider">
+
+    </section> -->
+
+      <!-- scientists -->
+
+      <section class="eyes__game">
+        <div class="eyes">
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script type="module" src="./js/leapyear.js"></script>
+    <script type="module" src="./js/guesswork.js"></script>
+    <script type="module" src="./js/rockpaperscissors.js"></script>
+    <script type="module" src="./js/calc.js"></script>
+    <script type="module" src="./js/clockwork.js"></script>
+    <script type="module" src="./js/googledinosaur.js"></script>
+    <script type="module" src="./js/football.js"></script>
+    <script type="module" src="./js/threenumbers.js"></script>
+    <script type="module" src="./js/slider.js"></script>
+    <script type="module" src="./js/scientists.js"></script>
+    <script type="module" src="./js/eyes.js"></script>
   </body>
 </html>
