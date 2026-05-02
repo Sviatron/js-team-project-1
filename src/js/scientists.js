@@ -107,7 +107,7 @@ console.log(itemsSortName(scientists));
 
 // Відсортувати вчених по кількості прожитих років
 const itemsSortLived = (scientists) => {
-  return [...scientists].sort((a, b) => a.sumLived.localeCompare(b.sumLived));
+  return [...scientists.map((scientist) => scientist.dead - scientist.born)].sort();
 };
 console.log(itemsSortLived(scientists));
 // Видалити з масива вчених що народилися
