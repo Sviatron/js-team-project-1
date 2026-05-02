@@ -10,8 +10,95 @@
     justify-content: center;
     align-items: center;
     background-color: linear-gradient(135deg, #e0e0e0, #f0f0f0);
-    font-family;
+    
 } */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.leap__year__game {
+  border-top: 1px solid #000;
+  padding-top: 40px;
+}
+
+.leap__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+
+.leap__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#leapForm {
+  display: flex;
+  align-items: center;
+  background: #d9d9d9;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 0 #bcbcbc;
+}
+
+
+#leapInput {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  background: transparent;
+  font-size: 16px;
+  width: 250px;
+}
+
+#leapInput::placeholder {
+  color: #8c8c8c;
+}
+
+.leap__button {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border: none;
+  position: relative;
+}
+
+
+/* .leap__button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+} */
+
+.leap__button::after {
+  content: "";
+  width: 8px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 28px;
+  left: 26px;
+  transform: rotate(45deg);
+}
+
+
+#leapResult {
+  font-size: 16px;
+  color: #2e7d32; 
+  white-space: nowrap;
+}
 
 .eyes {
   display: flex;
@@ -30,21 +117,10 @@
   overflow: hidden;
 }
 
-.eye::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  top: 20px;
-  left: 25px;
-}
-
 .pupil {
   width: 45px;
   height: 45px;
-  background-color: radial-gradient(circle at 30% 30%, #333, #000);
+  background: radial-gradient(circle at 30% 30%, #ffffff, #000);
   border-radius: 50%;
   position: absolute;
   top: 50%;
