@@ -31,7 +31,6 @@
   margin-bottom: 40px;
 }
 
-
 .leap__div {
   display: flex;
   align-items: center;
@@ -47,7 +46,6 @@
   overflow: hidden;
   box-shadow: 0 4px 0 #bcbcbc;
 }
-
 
 #leapInput {
   border: none;
@@ -68,41 +66,85 @@
   background: #000;
   border: none;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-/* .leap__button::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 14px;
-  left: 14px;
-} */
-
-.leap__button::after {
-  content: "";
-  width: 8px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  top: 28px;
-  left: 26px;
-  transform: rotate(45deg);
+.leap__button img {
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
-
 
 #leapResult {
   font-size: 16px;
-  color: #2e7d32; 
+  color: #2e7d32;
   white-space: nowrap;
+}
+
+.three__numbers__game {
+  border-top: 1px solid #000;
+  padding-top: 40px;
+}
+
+.three__numbers__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.three__numbers__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.three__numbers__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#threeForm {
+  display: flex;
+  gap: 40px;
+}
+
+#threeForm input {
+  width: 200px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+
+  background: #d9d9d9;
+  box-shadow: 0 5px 0 #bfbfbf;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+#threeForm input::placeholder {
+  color: #8c8c8c;
+}
+
+#threeResult {
+  font-size: 16px;
+  color: #000;
+}
+
+.eyes__game {
+  margin: 80px 0;
 }
 
 .eyes {
   display: flex;
   gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .eye {
@@ -115,6 +157,9 @@
     inset 0 5px 10px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pupil {
