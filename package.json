@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "modern-normalize": "^3.0.1"
   }
 }
