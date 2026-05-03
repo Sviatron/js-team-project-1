@@ -6,8 +6,8 @@ soccerField.addEventListener("click", (event) => {
   let x = event.clientX - rect.left - soccerBall.offsetWidth / 2;
   let y = event.clientY - rect.top - soccerBall.offsetHeight / 2;
   //   console.log(event.clientX, event.clientY);
-  if (soccerBall.position.) {
-  }
+//   if (soccerBall.position.) {
+//   }
 
   soccerBall.style.left = `${x}px`;
   soccerBall.style.top = `${y}px`;
