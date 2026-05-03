@@ -33,39 +33,55 @@
       <!-- guesswork -->
 
       <section class="stonePaperScissor">
-        <ul class="stonePaperScissor__list">
-          <li>
-            <button
-              type="button"
-              class="stonePaperScissor__button"
-              data-action="stone"
-            >
-              stone
-            </button>
-          </li>
+        <h2 class="stonePaperScissor__title">Камінь - ножиці - папір</h2>
+        <div class="stonePaperScissor__game">
+          <ul class="stonePaperScissor__list">
+            <li>
+              <button
+                type="button"
+                class="stonePaperScissor__button"
+                data-action="stone"
+              >
+                <img src="./images/stone.png" alt="stone" />
+              </button>
+            </li>
 
-          <li>
-            <button
-              type="button"
-              class="stonePaperScissor__button"
-              data-action="paper"
-            >
-              paper
-            </button>
-          </li>
+            <li>
+              <button
+                type="button"
+                class="stonePaperScissor__button"
+                data-action="paper"
+              >
+                <img src="./images/paper.png" alt="paper" />
+              </button>
+            </li>
 
-          <li>
-            <button
-              type="button"
-              class="stonePaperScissor__button"
-              data-action="scissor"
-            >
-              scissor
-            </button>
-          </li>
-        </ul>
-        <p class="stonePaperScissor__user">0</p>
-        <p class="stonePaperScissor__computer">0</p>
+            <li>
+              <button
+                type="button"
+                class="stonePaperScissor__button"
+                data-action="scissor"
+              >
+                <img src="./images/scissors.png" alt="scissor" />
+              </button>
+            </li>
+          </ul>
+          <div>
+            <h3 class="stonePaperScissor__subtitle">Рахунок:</h3>
+            <div class="stonePaperScissor__game--name">
+              <p class="stonePaperScissor__name">Комп’ютер -</p>
+              <p class="stonePaperScissor__user">0</p>
+            </div>
+            <div class="stonePaperScissor__game--name">
+              <p class="stonePaperScissor__name">Ви -</p>
+              <p class="stonePaperScissor__computer">0</p>
+            </div>
+          </div>
+        </div>
+        <p class="stonePaperScissor__text">Ви виграли раунд!</p>
+        <button class="stonePaperScissor__button--final">
+          Варіант комп’ютера
+        </button>
       </section>
 
       <section class="calculator">
@@ -116,10 +132,13 @@
       <!-- clockwork -->
 
       <!-- google dinosaur -->
-<section class="dinosaur">
-  <h2>Google динозавр</h2>
-  <canvas id="dinosaur__board"></canvas>
-</section>
+      <section class="dinosaur">
+        <h2>Google динозавр</h2>
+        <div class="game">
+          <div id="dino"></div>
+          <div id="cactus"></div>
+        </div>
+      </section>
       <!-- football -->
 
       <section class="three__numbers__game">

@@ -1,5 +1,98 @@
-/* dinosaur */
-#dinosaur__board{
-    background-color: lightgray;
-    border-bottom: 1px solid black;
+/* stonePaperScissor */
+.stonePaperScissor {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-top: 1px solid #000000;
+}
+.stonePaperScissor__title {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  text-align: center;
+}
+.stonePaperScissor__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 38px;
+}
+.stonePaperScissor__button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #000000;
+}
+.stonePaperScissor__subtitle {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 170%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.stonePaperScissor__name {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.stonePaperScissor__user {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.stonePaperScissor__computer {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.stonePaperScissor__text {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #039900;
+  text-align: center;
+}
+.stonePaperScissor__button--final {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  background-color: #000000;
+  margin: auto;
+  display: block;
+}
+.stonePaperScissor__game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 104px;
+}
+.stonePaperScissor__game--name {
+  display: flex;
+  align-items: center;
 }
