@@ -36,7 +36,7 @@ const calculat = function () {
       if (numSecond !== 0) {
         result = numfirst / numSecond;
       } else {
-        result = "nul";
+        result = "На нуль ділити не можна";
       }
       break;
   }

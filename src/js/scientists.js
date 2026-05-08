@@ -1,122 +1,132 @@
+const list = document.querySelector(".scientists__list");
+
+const actionSiecle = document.querySelector(
+  ".scientists__button[data-action='siecle']",
+);
+const actionSortLived = document.querySelector(
+  ".scientists__button[data-action='sortLived']",
+);
+const actionSortName = document.querySelector(
+  ".scientists__button[data-action='sortName']",
+);
+const actionBornLast = document.querySelector(
+  ".scientists__button[data-action='bornLast']",
+);
+const actionBornAlbert = document.querySelector(
+  ".scientists__button[data-action='bornAlbert']",
+);
+const actionFirstLetterC = document.querySelector(
+  ".scientists__button[data-action='firstLetterC']",
+);
+const actionRemoveFirstLetterA = document.querySelector(
+  ".scientists__button[data-action='removeFirstLetterA']",
+);
+const actionMinMax = document.querySelector(
+  ".scientists__button[data-action='minMax']",
+);
+const actionFirstLetterNameSurname = document.querySelector(
+  ".scientists__button[data-action='firstLetterNameSurname']",
+);
+
 const scientists = [
-  {
-    name: "Albert",
-    surname: "Einstein",
-    born: 1879,
-    dead: 1955,
-    id: 1,
-  },
-  {
-    name: "Isaac",
-    surname: "Newton",
-    born: 1643,
-    dead: 1727,
-    id: 2,
-  },
-  {
-    name: "Galileo",
-    surname: "Galilei",
-    born: 1564,
-    dead: 1642,
-    id: 3,
-  },
-  {
-    name: "Marie",
-    surname: "Curie",
-    born: 1867,
-    dead: 1934,
-    id: 4,
-  },
-  {
-    name: "Johannes",
-    surname: "Kepler",
-    born: 1571,
-    dead: 1630,
-    id: 5,
-  },
-  {
-    name: "Nicolaus",
-    surname: "Copernicus",
-    born: 1473,
-    dead: 1543,
-    id: 6,
-  },
-  {
-    name: "Max",
-    surname: "Planck",
-    born: 1858,
-    dead: 1947,
-    id: 7,
-  },
-  {
-    name: "Katherine",
-    surname: "Blodgett",
-    born: 1898,
-    dead: 1979,
-    id: 8,
-  },
-  {
-    name: "Ada",
-    surname: "Lovelace",
-    born: 1815,
-    dead: 1852,
-    id: 9,
-  },
-  {
-    name: "Sarah E.",
-    surname: "Goode",
-    born: 1855,
-    dead: 1905,
-    id: 10,
-  },
-  {
-    name: "Lise",
-    surname: "Meitner",
-    born: 1878,
-    dead: 1968,
-    id: 11,
-  },
-  {
-    name: "Hanna",
-    surname: "Hammarström",
-    born: 1829,
-    dead: 1909,
-    id: 12,
-  },
+  { name: "Albert", surname: "Einstein", born: 1879, dead: 1955 },
+  { name: "Isaac", surname: "Newton", born: 1643, dead: 1727 },
+  { name: "Galileo", surname: "Galilei", born: 1564, dead: 1642 },
+  { name: "Marie", surname: "Curie", born: 1867, dead: 1934 },
+  { name: "Johannes", surname: "Kepler", born: 1571, dead: 1630 },
+  { name: "Nicolaus", surname: "Copernicus", born: 1473, dead: 1543 },
+  { name: "Max", surname: "Planck", born: 1858, dead: 1947 },
+  { name: "Katherine", surname: "Blodgett", born: 1898, dead: 1979 },
+  { name: "Ada", surname: "Lovelace", born: 1815, dead: 1852 },
+  { name: "Sarah E.", surname: "Goode", born: 1855, dead: 1905 },
+  { name: "Lise", surname: "Meitner", born: 1878, dead: 1968 },
+  { name: "Hanna", surname: "Hammarström", born: 1829, dead: 1909 },
 ];
 
-// отримати масив вчених що народилися в 19 ст
-const itemsSiecle = (scientists) => {
-  return scientists.filter((scientist) => scientist.born > 1801);
+const getLived = (s) => s.dead - s.born;
+
+const render = (data) => {
+  list.innerHTML = "";
+
+  for (const scientist of data) {
+    const li = document.createElement("li");
+    const h3 = document.createElement("h3");
+    const p = document.createElement("p");
+
+    h3.textContent = `${scientist.name} ${scientist.surname}`;
+    p.textContent = `${scientist.born} - ${scientist.dead} (${getLived(scientist)} вік)`;
+    li.classList.add("scientists__item");
+    li.appendChild(h3);
+    li.appendChild(p);
+    list.appendChild(li);
+  }
 };
-console.log(itemsSiecle(scientists));
 
-// знайти суму років скільки прожили всі вченні
-const sumLived = (scientists) => {
-  return scientists.map((scientist) => scientist.dead - scientist.born);
-};
-console.log(sumLived(scientists));
-
-// Відсортувати вчених по алфавіту
-
-const itemsSortName = (scientists) => {
-  return [...scientists].sort((a, b) => a.name.localeCompare(b.name));
+const itemsSiecle = () => {
+  render(scientists.filter((s) => s.born > 1801));
 };
 
-console.log(itemsSortName(scientists));
-
-// Відсортувати вчених по кількості прожитих років
-const itemsSortLived = (scientists) => {
-  return [...scientists.map((scientist) => scientist.dead - scientist.born)].sort();
+const itemsSortName = () => {
+  render([...scientists].sort((a, b) => a.name.localeCompare(b.name)));
 };
-console.log(itemsSortLived(scientists));
-// Видалити з масива вчених що народилися
-// в 15 або 16 або 17 столітті
-// Знайти вченого який народився найпізніше.
-// Знайти рік народження Albert Einstein
-// знайти вчених прізвище яких починається на літеру С
-// Видалити з масива всіх вчених імя яких починається на A
-// Знайти вченого який прожив найбільше
-// і вченого який прожив найменьше
-// Знайти вчених в яких співпадають перші літери імені і прізвища
-// Дізнатися чи всі вченні працювали в 19 столітті
+
+const sortLived = () => {
+  render([...scientists].sort((a, b) => getLived(b) - getLived(a)));
+};
+
+const lastBorn = () => {
+  let max = scientists[0];
+
+  for (const s of scientists) {
+    if (s.born > max.born) max = s;
+  }
+
+  render([max]);
+};
+
+const bornAlbert = () => {
+  render(
+    scientists.filter((s) => s.name === "Albert" || s.surname === "Einstein"),
+  );
+};
+
+const firstLetter = () => {
+  render(scientists.filter((s) => s.surname[0] === "C"));
+};
+
+const remove = () => {
+  render(scientists.filter((s) => s.name[0] !== "A"));
+};
+
+const minMaxLived = () => {
+  let min = scientists[0];
+  let max = scientists[0];
+
+  for (const s of scientists) {
+    if (getLived(s) > getLived(max)) max = s;
+    if (getLived(s) < getLived(min)) min = s;
+  }
+
+  render([min, max]);
+};
+
+const firstLetterNameAndSurname = () => {
+  render(scientists.filter((s) => s.name[0] === s.surname[0]));
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  render(scientists);
+
+  actionSiecle.addEventListener("click", itemsSiecle);
+  actionSortLived.addEventListener("click", sortLived);
+  actionSortName.addEventListener("click", itemsSortName);
+  actionBornLast.addEventListener("click", lastBorn);
+  actionBornAlbert.addEventListener("click", bornAlbert);
+  actionFirstLetterC.addEventListener("click", firstLetter);
+  actionRemoveFirstLetterA.addEventListener("click", remove);
+  actionMinMax.addEventListener("click", minMaxLived);
+  actionFirstLetterNameSurname.addEventListener(
+    "click",
+    firstLetterNameAndSurname,
+  );
+});
