@@ -16,9 +16,50 @@
     <link rel="stylesheet" href="./css/illia.css" />
   </head>
 
-  <body>
+  <body class="no-scroll">
     <header></header>
     <main>
+      <div data-modal class="backdrop">
+        <div class="modal">
+          <button  data-modal-close class="modal__close"><img src="./images/Vector.png" alt="Vector"></button>
+          <p class="modal__text">
+            Привіт!
+            <br />
+            Ви потрапили на сайт інтерактивних ігор та завдань
+            <br />
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+            <br />
+            Бажаємо Вам гарно провести час!
+          </p>
+          <label class="modal__label"
+            >Введіть своє ім’я: <br>
+            <input class="modal__input" type="text" placeholder="Ваше ім’я..."
+          /></label>
+          <button  data-modal-save  class="modal__change--button">
+            Зберегти
+          </button>
+          <ul>
+            <li class="modal__image"><img src="./images/sword.png" alt=""></li>
+            <li class="modal__image"><img src="./images/puzzle.png" alt=""></li>
+            <li class="modal__image"><img src="./images/tic-tac-toe.png" alt=""></li>
+            <li class="modal__image"><img src="./images/game-development.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <div data-final-modal class="backdrop is-hidden">
+        <div class="final__modal">
+          <button data-final-modal-close class="final__modal__close">
+            <img src="./images/Vector.png" alt="Vector">
+          </button>
+          <h2 class="final__modal__title">Дякую за підписку!</h2>
+       <ul>
+            <li class="final__modal__image"><img src="./images/sword.png" alt=""></li>
+            <li class="final__modal__image"><img src="./images/puzzle.png" alt=""></li>
+            <li class="final__modal__image"><img src="./images/tic-tac-toe.png" alt=""></li>
+            <li class="final__modal__image"><img src="./images/game-development.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
       <section class="leap__year__game">
         <div class="container">
           <h2 class="leap__title">Перевір в який рік ти народився</h2>
@@ -30,7 +71,11 @@
                 placeholder="Введіть свій рік народження"
               />
               <button class="leap__button" type="submit">
-                <img src="./img/search.png" alt="search--button" class="search" />
+                <img
+                  src="./img/search.png"
+                  alt="search--button"
+                  class="search"
+                />
               </button>
             </form>
             <p id="leapResult"></p>
@@ -40,27 +85,37 @@
 
       guesswork
 
-      <section class="stonePaperScissor">
-        <ul class="stonePaperScissor__list">
-          <li>
-            <button
-              type="button"
-              class="stonePaperScissor__button"
-              data-action="stone"
-            >
-              stone
-            </button>
-          </li>
-          awdsawdaswd
-          <li>
-            <button
-              type="button"
-              class="stonePaperScissor__button"
-              data-action="paper"
-            >
-              paper
-            </button>
-          </li>
+      <section class="stonePaperScissor container">
+        <h2 class="stonePaperScissor__title">Камінь - ножиці - папір</h2>
+        <div class="stonePaperScissor__game">
+          <ul class="stonePaperScissor__list">
+            <li>
+              <button
+                type="button"
+                class="stonePaperScissor__button"
+                data-action="stone"
+              >
+                <img
+                  class="stonePaperScissor__image stone"
+                  src="./images/stone.png"
+                  alt="stone"
+                />
+              </button>
+            </li>
+
+            <li>
+              <button
+                type="button"
+                class="stonePaperScissor__button"
+                data-action="paper"
+              >
+                <img
+                  class="stonePaperScissor__image paper"
+                  src="./images/paper.png"
+                  alt="paper"
+                />
+              </button>
+            </li>
 
             <li>
               <button
@@ -68,7 +123,11 @@
                 class="stonePaperScissor__button"
                 data-action="scissor"
               >
-                <img src="./images/scissors.png" alt="scissor" />
+                <img
+                  class="stonePaperScissor__image scissor"
+                  src="./images/scissors.png"
+                  alt="scissor"
+                />
               </button>
             </li>
           </ul>
@@ -76,11 +135,11 @@
             <h3 class="stonePaperScissor__subtitle">Рахунок:</h3>
             <div class="stonePaperScissor__game--name">
               <p class="stonePaperScissor__name">Комп’ютер -</p>
-              <p class="stonePaperScissor__user">0</p>
+              <p class="stonePaperScissor__computer">0</p>
             </div>
             <div class="stonePaperScissor__game--name">
               <p class="stonePaperScissor__name">Ви -</p>
-              <p class="stonePaperScissor__computer">0</p>
+              <p class="stonePaperScissor__user">0</p>
             </div>
           </div>
         </div>
@@ -90,59 +149,72 @@
         </button>
       </section>
 
-      <section class="calculator">
-        <input class="calculator__Input-First" type="text" />
-        <ul class="calculator__list">
-          <li class="calculator__item">
-            <button
-              type="button"
-              class="calculator__Operator"
-              data-action="plus"
-            >
-              +
-            </button>
-          </li>
-          <li class="calculator__item">
-            <button
-              type="button"
-              class="calculator__Operator"
-              data-action="minus"
-            >
-              -
-            </button>
-          </li>
-          <li class="calculator__item">
-            <button
-              type="button"
-              class="calculator__Operator"
-              data-action="multiple"
-            >
-              *
-            </button>
-          </li>
-          <li class="calculator__item">
-            <button
-              type="button"
-              class="calculator__Operator"
-              data-action="divide"
-            >
-              /
-            </button>
-          </li>
-        </ul>
-        <input class="calculator__Input-Second" type="text" />
-        <button type="button" class="calculator__Egal">=</button>
-        <p class="calculator__Result"></p>
+      <section class="calculator container">
+        <h2 class="calculator__title">Калькулятор</h2>
+        <div class="calculator__game">
+          <input
+            class="calculator__Input-First"
+            type="text"
+            placeholder="Введіть число"
+          />
+          <ul class="calculator__list">
+            <li class="calculator__item">
+              <button
+                type="button"
+                class="calculator__Operator"
+                data-action="plus"
+              >
+                +
+              </button>
+            </li>
+            <li class="calculator__item">
+              <button
+                type="button"
+                class="calculator__Operator"
+                data-action="minus"
+              >
+                -
+              </button>
+            </li>
+            <li class="calculator__item">
+              <button
+                type="button"
+                class="calculator__Operator"
+                data-action="multiple"
+              >
+                *
+              </button>
+            </li>
+            <li class="calculator__item">
+              <button
+                type="button"
+                class="calculator__Operator"
+                data-action="divide"
+              >
+                /
+              </button>
+            </li>
+          </ul>
+          <input
+            class="calculator__Input-Second"
+            type="text"
+            placeholder="Введіть число"
+          />
+          <button type="button" class="calculator__Egal">=</button>
+          <p class="calculator__Result">Результат</p>
+        </div>
       </section>
 
       <!-- clockwork -->
 
-      <!-- google dinosaur -->
-      <section class="dinosaur">
-        <h2>Google динозавр</h2>
-        <div class="game">
-          <div id="dino"></div>
-          <div id="cactus"></div>
+    
+      <section class="dinosaur container">
+        <h2 class="dinosaur__title">Google динозавр</h2>
+        <div class="dinosaur__game">
+          <div class="dinosaur__dino"></div>
+          <div class="dinosaur__cactus"></div>
+          <p class="dinosaur__timer">0</p>
+           <p class="dinosaur__text"></p>
         </div>
       </section>
       <!-- football -->
@@ -166,7 +238,55 @@
 
       <section class="team__slider"></section>
 
-      scientists
+      <section class="scientists container">
+        <h2 class="scientists__title">Обери вченого/их</h2>
+        <ul class="scientists__list"></ul>
+        <ul>
+          <li class="scientists__item--button">
+            <button class="scientists__button" data-action="siecle">
+              Які вчені народилися в 19 ст.
+            </button>
+            <button class="scientists__button" data-action="sortLived">
+              Відсортувати вчених за кількістю прожитих років
+            </button>
+          </li>
+
+          <li class="scientists__item--button">
+            <button class="scientists__button" data-action="sortName">
+              Відсортувати вчених за алфавітом</button
+            ><button class="scientists__button" data-action="bornLast">
+              Знайти вченого, який народився найпізніше
+            </button>
+          </li>
+
+          <li class="scientists__item--button">
+            <button class="scientists__button" data-action="bornAlbert">
+              Знайти рік народження Albert Einshtein</button
+            ><button class="scientists__button" data-action="firstLetterC">
+              Знайти вчених, прізвища яких починаються на літеру “С”
+            </button>
+          </li>
+
+          <li class="scientists__item--button">
+            <button class="scientists__button" data-action="removeFirstLetterA">
+              Видалити всіх вчених, ім’я яких починається на “А”
+            </button>
+            <button class="scientists__button" data-action="minMax">
+              Знайти вченого, який прожив найдовше і вченого, який прожив
+              найменше
+            </button>
+          </li>
+
+          <li class="scientists__item--button">
+            <button
+              class="scientists__button"
+              data-action="firstLetterNameSurname"
+            >
+              Знайти вчених, в яких співпадають перші літери імені і прізвища
+            </button>
+          </li>
+        </ul>
+      </section>
 
       <section class="eyes__game">
         <div class="eyes">
@@ -181,7 +301,7 @@
     </main>
 
     <footer></footer>
-
+    <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/leapyear.js"></script>
     <script type="module" src="./js/guesswork.js"></script>
     <script type="module" src="./js/rockpaperscissors.js"></script>
