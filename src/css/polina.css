@@ -1,20 +1,87 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
 }
 
-/* body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: linear-gradient(135deg, #e0e0e0, #f0f0f0);
-    
-} */
+.logo__png {
+  display: block;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__png img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 81px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  min-width: 170px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  list-style: none;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li a {
+  display: block;
+  padding: 12px 15px;
+}
+
+.submenu li a:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.greeting__title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  text-align: right;
+  margin-left: 51px;
+}
 
 .container {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -26,9 +93,10 @@
 
 .leap__title {
   text-align: center;
-  font-size: 24px;
-  font-weight: 500;
   margin-bottom: 40px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .leap__div {
@@ -78,9 +146,11 @@
 }
 
 #leapResult {
-  font-size: 16px;
   color: #2e7d32;
   white-space: nowrap;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  text-align: right;
 }
 
 .three__numbers__game {
