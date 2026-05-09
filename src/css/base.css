@@ -1,4 +1,3 @@
-
 *,
 *::after,
 *::before {
@@ -8,6 +7,10 @@
 }
 body {
   font-family: "montserrat";
+  background-image: url("./../images/fon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 a {
   text-decoration: none;
@@ -24,6 +27,7 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
   width: 1120px;
+  background-color: white;
 }
 
 html {
