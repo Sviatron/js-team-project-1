@@ -1,8 +1,26 @@
+.football {
+  padding-top: 60px;
+  padding-bottom: 56px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.football-title {
+  font-family: "Montserrat Alternates";
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 36px;
+}
 .football-field {
   width: 720px;
   height: 220px;
-  background-color: green;
-  border-radius: 10px;
+  background-color: #5abb58;
+  border-radius: 37px;
   border: 2px solid black;
   position: relative;
 }
@@ -13,17 +31,21 @@
   background-color: #fff;
   position: absolute;
   border-radius: 50%;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .guesswork {
   border-top: 1px solid black;
-  padding-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 56px;
+  position: relative;
 }
 #guesswork-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  margin-left: 90px;
 }
 .guesswork-title {
   text-align: center;
@@ -32,25 +54,105 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  margin-bottom: 36px;
+  margin-bottom: 46px;
 }
 #guesswork-input {
+  display: block;
   border: none;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 4px 0 #bcbcbc;
+  padding: 10px 20px;
+  line-height: 100%;
+  font-size: 12px;
+  background-color: #d7d7d7;
+  width: 200px;
 }
 #guesswork-input::placeholder {
   color: #7e7e7e;
 }
 #guesswork-submit {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 34px;
   background: black;
   border: none;
-  position: relative;
-  display: flex;
-  align-items: center;
+  position: absolute;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 165px;
 }
 #guesswork-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  position: absolute;
+  right: 150px;
+  bottom: 67px;
+}
+
+#timecount {
+  border-bottom: 1px solid black;
+  padding-top: 60px;
+  padding-bottom: 56px;
+  position: relative;
+}
+#timecount-title {
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 46px;
+}
+#timecount-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 290px;
+}
+#timecount-input {
+  /* display: block;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  
+  padding: 10px 20px;
+  line-height: 100%;
+  font-size: 12px;
+
+  width: 200px; */
+  display: block;
+  border: none;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  background: transparent;
+  font-size: 16px;
+  width: 250px;
+  box-shadow: 0 4px 0 #bcbcbc;
+  background-color: #d7d7d7;
+}
+#timecount-btn {
+  width: 50px;
+  height: 49px;
+  background: black;
+  border: none;
+  position: absolute;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 200px;
+}
+#timecount-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  position: absolute;
+  right: 350px;
+  bottom: 67px;
 }

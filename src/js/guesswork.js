@@ -7,9 +7,11 @@ const randomNumberGenerator = function () {
 };
 const randomCheck = function (numUser, numComputer) {
   if (numUser === numComputer) {
-    guessworkP.textContent = `You guessed the correct number!(${numComputer})`;
+    guessworkP.textContent = `Вітаю, ви вгадали число! (${numComputer})`;
+    guessworkP.style.color = "#039900";
   } else {
-    guessworkP.textContent = `You didn't guess the correct number!(${numComputer})`;
+    guessworkP.textContent = `Ви програли, комп’ютер загадав (${numComputer})`;
+    guessworkP.style.color = "#990000";
   }
 };
 let inputValue;
