@@ -17,39 +17,52 @@
   </head>
 
   <body>
-    <header class="header">
-    <div class="logo">
-        <a href="./index.html" class="logo__png"><img src="./img/logo.png" alt="logo"></a>
-    </div>
+    <header >
+        <div class="header container">
+      <div class="logo">
+        <a href="./index.html" class="logo__png"
+          ><img src="./img/logo.png" alt="logo"
+        /></a>
+        
+        
+      </div>
 
-  <nav class="nav">
-    <ul class="menu">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Інтерактив ▾</a>
 
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Інтерактив ▾</a>
+            <ul class="submenu">
+              <li><a href="#">Числовий</a></li>
+              <li><a href="#">Ігровий</a></li>
+              <li><a href="#">Ознайомчий</a></li>
+            </ul>
+          </li>
 
-        <ul class="submenu">
-          <li><a href="#">Числовий</a></li>
-          <li><a href="#">Ігровий</a></li>
-          <li><a href="#">Ознайомчий</a></li>
+          <li><a href="#">Наша команда</a></li>
+          <li><a href="#">Контакти</a></li>
         </ul>
-      </li>
+      </nav>
 
-      <li><a href="#">Наша команда</a></li>
-      <li><a href="#">Контакти</a></li>
+      <div class="right">
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <div class="toggle">
+            <img src="./img/sun.png" alt="sun" class="icon__sun" />
+            <img src="./img/moon.png" alt="moon" class="icon__moon" />
+          </div>
+        </label>
 
-    </ul>
-  </nav>
-
-  <div class="greeting">
-    <h3 class="greeting__title">Вітаємо, User!</h3>
-  </div>
-
-</header>
+        <h3 class="greeting__title">Вітаємо, User!</h3>
+      </div>
+      </div>
+    </header>
     <main>
       <div data-modal class="backdrop">
         <div class="modal">
-          <button  data-modal-close class="modal__close"><img src="./images/Vector.png" alt="Vector"></button>
+          <button data-modal-close class="modal__close">
+            <img src="./images/Vector.png" alt="Vector" />
+          </button>
           <p class="modal__text">
             Привіт!
             <br />
@@ -60,31 +73,47 @@
             Бажаємо Вам гарно провести час!
           </p>
           <label class="modal__label"
-            >Введіть своє ім’я: <br>
+            >Введіть своє ім’я: <br />
             <input class="modal__input" type="text" placeholder="Ваше ім’я..."
           /></label>
-          <button  data-modal-save  class="modal__change--button">
+          <button data-modal-save class="modal__change--button">
             Зберегти
           </button>
           <ul>
-            <li class="modal__image"><img src="./images/sword.png" alt=""></li>
-            <li class="modal__image"><img src="./images/puzzle.png" alt=""></li>
-            <li class="modal__image"><img src="./images/tic-tac-toe.png" alt=""></li>
-            <li class="modal__image"><img src="./images/game-development.png" alt=""></li>
+            <li class="modal__image">
+              <img src="./images/sword.png" alt="" />
+            </li>
+            <li class="modal__image">
+              <img src="./images/puzzle.png" alt="" />
+            </li>
+            <li class="modal__image">
+              <img src="./images/tic-tac-toe.png" alt="" />
+            </li>
+            <li class="modal__image">
+              <img src="./images/game-development.png" alt="" />
+            </li>
           </ul>
         </div>
       </div>
       <div data-final-modal class="backdrop is-hidden">
         <div class="final__modal">
           <button data-final-modal-close class="final__modal__close">
-            <img src="./images/Vector.png" alt="Vector">
+            <img src="./images/Vector.png" alt="Vector" />
           </button>
           <h2 class="final__modal__title">Дякую за підписку!</h2>
-       <ul>
-            <li class="final__modal__image"><img src="./images/sword.png" alt=""></li>
-            <li class="final__modal__image"><img src="./images/puzzle.png" alt=""></li>
-            <li class="final__modal__image"><img src="./images/tic-tac-toe.png" alt=""></li>
-            <li class="final__modal__image"><img src="./images/game-development.png" alt=""></li>
+          <ul>
+            <li class="final__modal__image">
+              <img src="./images/sword.png" alt="" />
+            </li>
+            <li class="final__modal__image">
+              <img src="./images/puzzle.png" alt="" />
+            </li>
+            <li class="final__modal__image">
+              <img src="./images/tic-tac-toe.png" alt="" />
+            </li>
+            <li class="final__modal__image">
+              <img src="./images/game-development.png" alt="" />
+            </li>
           </ul>
         </div>
       </div>
@@ -235,14 +264,13 @@
 
       <!-- clockwork -->
 
-    
       <section class="dinosaur container">
         <h2 class="dinosaur__title">Google динозавр</h2>
         <div class="dinosaur__game">
           <div class="dinosaur__dino"></div>
           <div class="dinosaur__cactus"></div>
           <p class="dinosaur__timer">0</p>
-           <p class="dinosaur__text"></p>
+          <p class="dinosaur__text"></p>
         </div>
       </section>
       <!-- football -->
@@ -264,7 +292,10 @@
         </div>
       </section>
 
-      <section class="team__slider"></section>
+      <section class="team__slider">
+        <h2 class="team__slider__title">Наша команда</h2>
+        <div class="team__box"></div>
+      </section>
 
       <section class="scientists container">
         <h2 class="scientists__title">Обери вченого/их</h2>
