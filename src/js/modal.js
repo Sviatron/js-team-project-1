@@ -8,7 +8,7 @@ const nameTitle = document.querySelector(".greeting__title");
 let nameUser = "";
 
 saveBtn.addEventListener("click", changeModal);
-closeBtn.addEventListener("click", changeModal);
+closeBtn.addEventListener("click", closeModal);
 finalCloseBtn.addEventListener("click", closeModal);
 
 function changeModal() {
@@ -17,6 +17,7 @@ function changeModal() {
 }
 function closeModal() {
   finalModal.classList.add("is-hidden");
+  modal.classList.add("is-hidden");
   document.body.classList.remove("no-scroll");
   changeName();
 }
