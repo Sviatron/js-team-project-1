@@ -1,3 +1,7 @@
+header {
+  background-color: white;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -16,6 +20,10 @@
   height: 45px;
   width: auto;
   display: block;
+}
+
+.nav {
+  margin-right: 250px;
 }
 
 .menu {
@@ -71,6 +79,67 @@
   display: block;
 }
 
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+  background: rgba(122, 122, 122, 1);
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  background-color: white;
+  border: 0.5px solid #000000;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.switch input:checked + .toggle::before {
+  transform: translateX(20px);
+  background-color: #000000;
+}
+
+.icon__sun,
+.icon__moon {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  top: 3px;
+  z-index: 3;
+}
+
+.icon__sun {
+  left: 2px;
+}
+
+.icon__moon {
+  right: 2px;
+}
+
 .greeting__title {
   font-size: 16px;
   font-weight: 500;
@@ -98,7 +167,7 @@
 .leap__div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -116,8 +185,11 @@
   outline: none;
   padding: 15px 20px;
   background: transparent;
-  font-size: 16px;
   width: 250px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+
+
 }
 
 #leapInput::placeholder {
@@ -162,9 +234,11 @@
 }
 
 .three__numbers__title {
-  font-size: 24px;
   font-weight: 500;
   margin-bottom: 40px;
+  font-weight: 400;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
 }
 
 .three__numbers__div {
@@ -185,12 +259,12 @@
   border: none;
   outline: none;
   border-radius: 30px;
-
   background: #d9d9d9;
   box-shadow: 0 5px 0 #bfbfbf;
-
-  font-size: 16px;
   text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 #threeForm input::placeholder {
@@ -200,6 +274,56 @@
 #threeResult {
   font-size: 16px;
   color: #000;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.team__slider {
+  padding-top: 40px;
+  border-top: #000 solid 1px;
+}
+
+.team__slider__title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.team__box {
+  display: flex;
+  justify-content: center;
+}
+
+.team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+  margin-bottom: 20px;
+}
+
+.team__name {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.team__info {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 36px;
 }
 
 .eyes__game {
