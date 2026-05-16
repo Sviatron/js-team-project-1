@@ -131,8 +131,10 @@
       <section class="guesswork container">
         <h2 class="guesswork-title">Вгадай число, яке загадав комп’ютер</h2>
         <form action="" id="guesswork-form">
-          <input type="text" id="guesswork-input" />
-          <button type="submit" id="guesswork-submit">submit</button>
+          <input type="text" id="guesswork-input" placeholder="Введіть число" />
+          <button type="submit" id="guesswork-submit">
+            <img src="./img/search.png" alt="search" />
+          </button>
         </form>
         <p id="guesswork-text"></p>
       </section>
@@ -258,11 +260,20 @@
       </section>
 
       <!-- clockwork -->
-      <form action="" id="timecount-form">
-        <input type="number" id="timecount-input" />
-        <button type="submit" id="timecount-btn">Q</button>
-      </form>
-      <p id="timecount-text"></p>
+      <section id="timecount">
+        <h2 id="timecount-title">Калькулятор часу</h2>
+        <form action="" id="timecount-form">
+          <input
+            type="number"
+            id="timecount-input"
+            placeholder="Введіть число"
+          />
+          <button type="submit" id="timecount-btn">
+            <img src="./img/search.png" alt="search" />
+          </button>
+        </form>
+        <p id="timecount-text"></p>
+      </section>
 
       <section class="dinosaur container">
         <h2 class="dinosaur__title">Google динозавр</h2>
@@ -273,10 +284,12 @@
           <p class="dinosaur__text"></p>
         </div>
       </section>
-
-      <div class="football-field">
-        <img src="./img/ball.png" alt="football" class="football-ball" />
-      </div>
+      <section class="football">
+        <h2 class="football-title">Футбол</h2>
+        <div class="football-field">
+          <img src="./img/ball.png" alt="football" class="football-ball" />
+        </div>
+      </section>
 
       <section class="three__numbers__game">
         <div class="three__numbers__container">
