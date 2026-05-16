@@ -1,0 +1,2 @@
+let e=document.getElementById("num1"),t=document.getElementById("num2"),n=document.getElementById("num3"),u=document.getElementById("threeResult");function m(){let m=Number(e.value.trim()),a=Number(t.value.trim()),l=Number(n.value.trim());if(""===e.value||""===t.value||""===n.value){u.textContent="Введіть всі три числа!";return}if(isNaN(m)||isNaN(a)||isNaN(l)){u.textContent="Всі значення мають бути числами";return}u.textContent="Найбільше число:"+Math.max(m,a,l)}[e,t,n].forEach(e=>{e.addEventListener("input",m)});
+//# sourceMappingURL=js-team-project-1.18762571.js.map

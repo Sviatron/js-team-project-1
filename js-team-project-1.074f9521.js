@@ -1,0 +1,2 @@
+document.querySelector(".eyes__game").addEventListener("mousemove",e=>{document.querySelectorAll(".eye").forEach(t=>{let l=t.querySelector(".pupil"),n=t.getBoundingClientRect(),a=n.left+n.width/2,o=n.top+n.height/2,r=e.clientX-a,c=Math.atan2(e.clientY-o,r),i=20*Math.cos(c),s=20*Math.sin(c);l.style.transform=`translate(-50%, -50%) translate(${i}px,${s}px)`})});
+//# sourceMappingURL=js-team-project-1.074f9521.js.map

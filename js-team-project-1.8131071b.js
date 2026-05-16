@@ -1,0 +1,2 @@
+let e=document.getElementById("leapInput"),t=document.getElementById("leapResult");document.getElementById("leapForm").addEventListener("submit",n=>{n.preventDefault(),function(){let n=Number(e.value.trim());if(""===n){t.textContent=" Обов'язково введіть свій рік народження";return}n%4==0?t.textContent="Ви народилися у високосний рік!!!":t.textContent=" Ви народилися не у високосний рік!"}()});
+//# sourceMappingURL=js-team-project-1.8131071b.js.map

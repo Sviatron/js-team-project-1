@@ -1,0 +1,2 @@
+let t=document.querySelector("#timecount-form"),e=document.querySelector("#timecount-input");document.querySelector("#timecount-btn");let u=document.querySelector("#timecount-text"),n=function(t){let e=Math.floor(t/60);return u.textContent=`${e} hours : ${String(t-60*e).padStart(2,0)} minutes`};t.addEventListener("submit",t=>{let u=Number(e.value.trim());t.preventDefault(),n(u)});
+//# sourceMappingURL=js-team-project-1.56fd9bed.js.map

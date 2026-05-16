@@ -1,0 +1,2 @@
+let t=document.querySelector(".football-field"),e=document.querySelector(".football-ball");t.addEventListener("click",l=>{let i=t.getBoundingClientRect(),o=l.clientX-i.left-e.offsetWidth/2,f=l.clientY-i.top-e.offsetHeight/2,n=t.clientWidth-e.offsetWidth,c=t.clientHeight-e.offsetHeight;o=Math.max(0,Math.min(o,n)),f=Math.max(0,Math.min(f,c)),e.style.left=`${o}px`,e.style.top=`${f}px`});
+//# sourceMappingURL=js-team-project-1.baca60ec.js.map
