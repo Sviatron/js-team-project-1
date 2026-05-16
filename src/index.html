@@ -17,14 +17,11 @@
   </head>
 
   <body>
-    <header >
-        <div class="header container">
+    <header class="header">
       <div class="logo">
         <a href="./index.html" class="logo__png"
           ><img src="./img/logo.png" alt="logo"
         /></a>
-        
-        
       </div>
 
       <nav class="nav">
@@ -44,17 +41,8 @@
         </ul>
       </nav>
 
-      <div class="right">
-        <label class="switch">
-          <input type="checkbox" id="themeToggle" />
-          <div class="toggle">
-            <img src="./img/sun.png" alt="sun" class="icon__sun" />
-            <img src="./img/moon.png" alt="moon" class="icon__moon" />
-          </div>
-        </label>
-
+      <div class="greeting">
         <h3 class="greeting__title">Вітаємо, User!</h3>
-      </div>
       </div>
     </header>
     <main>
@@ -140,7 +128,16 @@
         </div>
       </section>
 
-      guesswork
+      <section class="guesswork container">
+        <h2 class="guesswork-title">Вгадай число, яке загадав комп’ютер</h2>
+        <form action="" id="guesswork-form">
+          <input type="text" id="guesswork-input" placeholder="Введіть число" />
+          <button type="submit" id="guesswork-submit">
+            <img src="./img/search.png" alt="search" />
+          </button>
+        </form>
+        <p id="guesswork-text"></p>
+      </section>
 
       <section class="stonePaperScissor container">
         <h2 class="stonePaperScissor__title">Камінь - ножиці - папір</h2>
@@ -263,6 +260,20 @@
       </section>
 
       <!-- clockwork -->
+      <section id="timecount" class="container">
+        <h2 id="timecount-title">Калькулятор часу</h2>
+        <form action="" id="timecount-form">
+          <input
+            type="number"
+            id="timecount-input"
+            placeholder="Введіть число"
+          />
+          <button type="submit" id="timecount-btn">
+            <img src="./img/search.png" alt="search" />
+          </button>
+        </form>
+        <p id="timecount-text"></p>
+      </section>
 
       <section class="dinosaur container">
         <h2 class="dinosaur__title">Google динозавр</h2>
@@ -273,10 +284,12 @@
           <p class="dinosaur__text"></p>
         </div>
       </section>
-      <!-- football -->
-      <div class="football-field">
-        <img src="./img/ball.png" alt="football" class="football-ball" />
-      </div>
+      <section class="football container">
+        <h2 class="football-title">Футбол</h2>
+        <div class="football-field">
+          <img src="./img/ball.png" alt="football" class="football-ball" />
+        </div>
+      </section>
 
       <section class="three__numbers__game">
         <div class="three__numbers__container">
@@ -359,7 +372,36 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="container">
+      <div class="footer">
+        <a href="./index.html"
+          ><img class="footer__logo" src="./img/logo.png" alt="logo"
+        /></a>
+        <ul class="footer__list">
+          <li>
+            <p class="footer__text">Тел: +38 (123) 456 78 90</p>
+          </li>
+          <li>
+            <p class="footer__text">E-Mail: codingmagic@gmail.com</p>
+          </li>
+          <li>
+            <p class="footer__text">Facebook: CodingMagic</p>
+          </li>
+          <li>
+            <p class="footer__text">Twitter: CodingMagic</p>
+          </li>
+          <li>
+            <p class="footer__text">Instagram: CodingMagic</p>
+          </li>
+        </ul>
+        <input
+          class="footer__input"
+          type="text"
+          placeholder="Ваша ел. адреса..."
+        />
+        <button class="footer__button">Підписатись</button>
+      </div>
+    </footer>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/leapyear.js"></script>
     <script type="module" src="./js/guesswork.js"></script>
